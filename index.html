@@ -96,6 +96,136 @@ body{background:#000}
 <li><img class="thumb" src="http://i.cubeupload.com/pesGjl.gif"/><a href="animated.html">Animated</a></li>
 </ul>
 </div>
+<<<<<<< HEAD
+=======
+<!--JAVASCRIPT-->
+<script>
+Element.prototype.remove=function(){this.parentElement.removeChild(this)};NodeList.prototype.remove=HTMLCollection.prototype.remove=function(){for(var a=this.length-1;0<=a;a--)this[a]&&this[a].parentElement&&this[a].parentElement.removeChild(this[a])};
+function GET(u, c){
+    var x = new XMLHttpRequest();
+    x.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            c(this.responseText);
+        }
+    };
+    x.open("GET", "https://allow-any-origin.appspot.com/"+u, true);
+    x.send();
+}
+function loadChat(id) {
+    if(document.querySelector("#"+id).innerText.replace(/[^\w\+]/g,"") == "+"){
+        var rep = prompt("Enter the name of the chat that you want to load.");
+    }else{
+        for(var i=1;7>i;i++){
+            if(id != ("c"+i)){
+                document.querySelector("#ch"+i).style.position = "absolute";
+                document.querySelector("#ch"+i).style.pointerEvents = "none";
+                document.querySelector("#ch"+i).style.opacity = "0";
+                document.querySelector("a#c"+i).style.color = "";
+            }else{
+                document.querySelector("#ch"+i).style.position = "";
+                document.querySelector("#ch"+i).style.pointerEvents = "";
+                document.querySelector("#ch"+i).style.opacity = "";
+                document.querySelector("a#c"+i).style.color = "#c70000";
+            }
+        }
+        return;
+    }
+    var numid = undefined;
+    if(rep){
+        if(rep.replace(/[^\w]/g,"") != ""){
+            rep = rep.replace(/[^\w]/g,"");
+            for(var i=1;7>i;i++){
+                if(id != ("c"+i)){
+                    document.querySelector("a#c"+i).style.color = "";
+                    document.querySelector("#ch"+i).style.position = "absolute";
+                    document.querySelector("#ch"+i).style.pointerEvents = "none";
+                    document.querySelector("#ch"+i).style.opacity = "0";
+                }else{
+                    document.querySelector("a#c"+i).style.color = "#c70000";
+                    document.querySelector("#ch"+i).style.position = "";
+                    document.querySelector("#ch"+i).style.pointerEvents = "";
+                    document.querySelector("#ch"+i).style.opacity = "";
+                    numid = i;
+                }
+            } 
+            if(!numid)
+                return;
+            GET("http://xat.com/web_gear/chat/roomid.php?d=" + rep + "&v2",
+                function(data){
+                    try{
+                        data = JSON.parse(data);
+                        document.querySelector("#"+id).innerText = data["g"];
+                        var emb = document.createElement("embed");
+                        emb.setAttribute("src","//www.xatech.com/web_gear/chat/chat2.swf?id="+data["id"]+"&gn="+data["g"]+"&xc=2336");
+                        emb.setAttribute("quality","high");
+                        emb.setAttribute("wmode","transparent");
+                        emb.setAttribute("width","728");
+                        emb.setAttribute("height","486");
+                        emb.setAttribute("name","chat");
+                        emb.setAttribute("align","middle");
+                        emb.setAttribute("allowScriptAcess","always");
+                        emb.setAttribute("type","application/x-shockwave-flash");
+                        emb.setAttribute("pluginspage","//xat.com/update_flash.shtml");
+                        document.querySelector("span#ch"+numid).appendChild(emb);
+                        emb = undefined;
+                    }catch(e){
+                    }
+                }
+            );
+        }
+    }
+}
+</script>
+
+<!--HTML-->
+<script>
+function showTab1() {
+    document.getElementById("c3").style.display = 'block'
+}
+function showTab2() {
+    document.getElementById("c4").style.display = 'block'
+}
+function showTab3() {
+    document.getElementById("c5").style.display = 'block'
+}
+function showTab4() {
+    document.getElementById("c6").style.display = 'block'
+}
+
+</script>
+<div id="chat1">
+    <div id="tabs">
+    <ul>
+        <li><a style="color:#c70000;" href="#" id="c1" onclick="loadChat(this.id)">Dallas</a></li>
+        <li><a href="#" id="c2" onclick="loadChat(this.id);showTab1()">+</a></li>
+        <li><a style="display:none;" href="#" onclick="loadChat(this.id);showTab2()" id="c3" onclick="loadChat(this.id)">+</a></li>
+        <li><a style="display:none;" href="#" onclick="loadChat(this.id);showTab3()" id="c4" onclick="loadChat(this.id)">+</a></li>
+		<li><a style="display:none;" href="#" onclick="loadChat(this.id);showTab4()" id="c5" onclick="loadChat(this.id)">+</a></li>
+		<li><a style="display:none;" href="#" id="c6" onclick="loadChat(this.id)">+</a></li>
+    </ul>
+    </div>
+    <span id="chat">
+        <span id="ch1">
+           <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="//fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="728" height="486" id="chat" align="middle">
+<param name="allowScriptAccess" value="always" />
+<param name="movie" value="//www.xatech.com/web_gear/chat/chat.swf" />
+<param name="quality" value="high" /><param name="bgcolor" value="#000000" />
+<param name="FlashVars" value="id=3971127&xc=3360&cn=1822837358&gb=7VcYp2&gn=Dallas" /><param name="wmode" value="transparent" />
+<embed src="//www.xatech.com/web_gear/chat/chat2.swf" quality="high" wmode="transparent" bgcolor="#000000" width="728" height="486" name="chat" FlashVars="id=3971127&xc=3360&cn=1822837358&gb=7VcYp2&gn=💔" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" pluginspage="//xat.com/update_flash.shtml" />
+</object>
+        </span>
+        <span id="ch2"></span>
+        <span id="ch3"></span>
+        <span id="ch4"></span>
+		<span id="ch5"></span>
+		<span id="ch6"></span>
+    </span>
+</div>
+
+</td><td width="2%">&nbsp;</td></tr> 
+</table>
+
+>>>>>>> parent of 5124381... Update index.html
 <br>
 <div class="settings" onclick="toggleState(backsettings);clickOff2()">
 </div>
