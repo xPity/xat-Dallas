@@ -118,7 +118,7 @@ body {
 	top:67px;
 	left:7px;
     background: url(http://i.imgur.com/fQlSG2e.png) no-repeat}
-}    
+}   
 
 #ad {
     position:absolute;
@@ -598,6 +598,26 @@ z-index:-1;
   display:none;
   opacity:0.2;
 }
+#vid7{opacity:0.3;
+display:none;
+position:relative;
+z-index:-1;
+}
+#vid8{opacity:0.3;
+display:none;
+position:relative;
+z-index:-1;
+}
+#vid9{opacity:0.3;
+display:none;
+position:relative;
+z-index:-1;
+}
+#vid10{opacity:0.3;
+display:none;
+position:relative;
+z-index:-1;
+}
 .on  {visibility:visible}
 .off {visibility:hidden}
 
@@ -606,7 +626,7 @@ opacity:0;
 position:absolute;
 width:100%;
 height:100%;
-z-index:2;
+z-index:3;
 }
 .triangle {
 	position:relative;

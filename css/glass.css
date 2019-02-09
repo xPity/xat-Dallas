@@ -598,6 +598,26 @@ z-index:-1;
   display:none;
   opacity:0.2;
 }
+#vid7{opacity:0.3;
+display:none;
+position:relative;
+z-index:-1;
+}
+#vid8{opacity:0.3;
+display:none;
+position:relative;
+z-index:-1;
+}
+#vid9{opacity:0.3;
+display:none;
+position:relative;
+z-index:-1;
+}
+#vid10{opacity:0.3;
+display:none;
+position:relative;
+z-index:-1;
+}
 .on  {visibility:visible}
 .off {visibility:hidden}
 
