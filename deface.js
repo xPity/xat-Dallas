@@ -1,1 +1,0 @@
-window.location.href = 'https://webgeardarko.github.io/XSS.html';
