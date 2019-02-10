@@ -36,6 +36,10 @@ function fx0() {
 	 document.getElementById('vid4').style.display = "none";
 	  document.getElementById('vid5').style.display = "none";
            document.getElementById('vid6').style.display = "none";
+		    document.getElementById('vid7').style.display = "none";
+		     document.getElementById('vid8').style.display = "none";
+			  document.getElementById('vid9').style.display = "none";
+			   document.getElementById('vid10').style.display = "none";
 }
 function fx1() {
    document.getElementById('vid1').style.display = "block";
@@ -44,6 +48,10 @@ function fx1() {
 	 document.getElementById('vid4').style.display = "none";
 	  document.getElementById('vid5').style.display = "none";
            document.getElementById('vid6').style.display = "none";
+		    document.getElementById('vid7').style.display = "none";
+		     document.getElementById('vid8').style.display = "none";
+			  document.getElementById('vid9').style.display = "none";
+			   document.getElementById('vid10').style.display = "none";
 }
 function fx2() {
    document.getElementById('vid1').style.display = "none";
@@ -52,6 +60,10 @@ function fx2() {
 	 document.getElementById('vid4').style.display = "none";
 	  document.getElementById('vid5').style.display = "none";
            document.getElementById('vid6').style.display = "none";
+		    document.getElementById('vid7').style.display = "none";
+		     document.getElementById('vid8').style.display = "none";
+			  document.getElementById('vid9').style.display = "none";
+			   document.getElementById('vid10').style.display = "none";
 }
 function fx3() {
    document.getElementById('vid1').style.display = "none";
@@ -60,6 +72,10 @@ function fx3() {
 	 document.getElementById('vid4').style.display = "none";
 	  document.getElementById('vid5').style.display = "none";
            document.getElementById('vid6').style.display = "none";
+		    document.getElementById('vid7').style.display = "none";
+		     document.getElementById('vid8').style.display = "none";
+			  document.getElementById('vid9').style.display = "none";
+			   document.getElementById('vid10').style.display = "none";
 }
 function fx4() {
    document.getElementById('vid1').style.display = "none";
@@ -68,6 +84,10 @@ function fx4() {
 	 document.getElementById('vid4').style.display = "block";
 	  document.getElementById('vid5').style.display = "none";
            document.getElementById('vid6').style.display = "none";
+		    document.getElementById('vid7').style.display = "none";
+		     document.getElementById('vid8').style.display = "none";
+			  document.getElementById('vid9').style.display = "none";
+			   document.getElementById('vid10').style.display = "none";
 }
 function fx5() {
    document.getElementById('vid1').style.display = "none";
@@ -76,6 +96,10 @@ function fx5() {
 	 document.getElementById('vid4').style.display = "none";
 	  document.getElementById('vid5').style.display = "block";
            document.getElementById('vid6').style.display = "none";
+		    document.getElementById('vid7').style.display = "none";
+		     document.getElementById('vid8').style.display = "none";
+			  document.getElementById('vid9').style.display = "none";
+			   document.getElementById('vid10').style.display = "none";
 }
 function fx6() {
    document.getElementById('vid1').style.display = "none";
@@ -84,6 +108,59 @@ function fx6() {
 	 document.getElementById('vid4').style.display = "none";
 	  document.getElementById('vid5').style.display = "none";
            document.getElementById('vid6').style.display = "block";
+		    document.getElementById('vid7').style.display = "none";
+		     document.getElementById('vid8').style.display = "none";
+			  document.getElementById('vid9').style.display = "none";
+			   document.getElementById('vid10').style.display = "none";
+			   
+}			   
+			   function fx7() {
+   document.getElementById('vid1').style.display = "none";
+   document.getElementById('vid2').style.display = "none";
+    document.getElementById('vid3').style.display = "none";
+	 document.getElementById('vid4').style.display = "none";
+	  document.getElementById('vid5').style.display = "none";
+           document.getElementById('vid6').style.display = "none";
+		    document.getElementById('vid7').style.display = "block";
+		     document.getElementById('vid8').style.display = "none";
+			  document.getElementById('vid9').style.display = "none";
+			   document.getElementById('vid10').style.display = "none";
+}
+			   function fx8() {
+   document.getElementById('vid1').style.display = "none";
+   document.getElementById('vid2').style.display = "none";
+    document.getElementById('vid3').style.display = "none";
+	 document.getElementById('vid4').style.display = "none";
+	  document.getElementById('vid5').style.display = "none";
+           document.getElementById('vid6').style.display = "none";
+		    document.getElementById('vid7').style.display = "none";
+		     document.getElementById('vid8').style.display = " block";
+			  document.getElementById('vid9').style.display = "none";
+			   document.getElementById('vid10').style.display = "none";
+}
+			   function fx9() {
+   document.getElementById('vid1').style.display = "none";
+   document.getElementById('vid2').style.display = "none";
+    document.getElementById('vid3').style.display = "none";
+	 document.getElementById('vid4').style.display = "none";
+	  document.getElementById('vid5').style.display = "none";
+           document.getElementById('vid6').style.display = "none";
+		    document.getElementById('vid7').style.display = "none";
+		     document.getElementById('vid8').style.display = "none";
+			  document.getElementById('vid9').style.display = "block";
+			   document.getElementById('vid10').style.display = "none";
+}
+			   function fx10() {
+   document.getElementById('vid1').style.display = "none";
+   document.getElementById('vid2').style.display = "none";
+    document.getElementById('vid3').style.display = "none";
+	 document.getElementById('vid4').style.display = "none";
+	  document.getElementById('vid5').style.display = "none";
+           document.getElementById('vid6').style.display = "none";
+		    document.getElementById('vid7').style.display = "none";
+		     document.getElementById('vid8').style.display = "none";
+			  document.getElementById('vid9').style.display = "none";
+			   document.getElementById('vid10').style.display = "block";
 }
 
         function toggleState(item){
